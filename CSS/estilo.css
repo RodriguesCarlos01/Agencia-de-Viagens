@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --branco: #fff;
+  --titulo-bordas: #5d15d1
+
+}
+
+body{
+  background-color: #80808029;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif; 
+}
+
+.container-cabecalho{
+  width: 100%;
+  height: 55px;
+  background-color: var(--branco);
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho-imagen{
+  display: flex;
+  align-items: center;
+}
+
+.reaproveitavel{
+  max-width: 1024px;
+  margin:  0 auto;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.cabecalho-imagen img{
+  width: 32px;
+  height:32px
+}
+
+.cabecalho-imagen p{
+  font-size: 24px;
+  color: var(--titulo-bordas);
+  margin-left: 10px;
+}
+
+.container-formulario{
+  width: 100%;
+  height: auto;
+}
+
+.formulario-imagen-fundo{
+  width: 100%;
+  height: auto;
+  background-image: url("../imagens/bahia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover ;
+  padding: 40px;
+  
+}
+.formulario{
+  width: 1024px;
+  height: auto;
+}
+
+.formulario-titulo img{
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg);
+
+}
+
+.formulario-titulo {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--titulo-bordas);
+}
+
+.formulario-titulo h1{
+  font-size: 14px;
+  color: var(--branco);
+  margin: 0 0 0 5px;
+}
+
+.container-dados{
+  width: 100%;
+  background: var(--branco);
+  padding: 30px 25px 20px 25px;
+}
+
+.container-dados h2{
+  font-size: 22px;
+  margin: 0 0 24px 0;
+}
+
+.fomulario-principal{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid red;
+}
+
+.fomulario-principal label{
+  font-size: 16px;
+}
+
+.fomulario-principal input {
+  width: 100%;
+  height: 32px;
+  margin: 10px 0px;
+}
+.formulario-duplo{
+  border: 3px solid red;
+}
+
+

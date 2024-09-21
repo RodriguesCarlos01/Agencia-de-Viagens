@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="description" content="A Agência de Viagens econtra o hotel certo pra você!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/estilo.css">
   <title>Agência de viagens</title>
+  
 </head>
 <body>
   
   <header class="container-cabecalho">
-    <div class="cabecalho-imagen">
+    <div class="cabecalho-imagen reaproveitavel">
       <img src="imagens/local-logo.png" title="Logo da agência" alt="Logo da agência">
       <p>Agêcia de Viagens</p>
     </div>
@@ -18,15 +20,15 @@
   <main class="container-formulario">
 
     <section class="formulario-imagen-fundo">
-      <div>
-        <div>
+      <div  class="formulario reaproveitavel">
+        <div class="formulario-titulo">
           <img src="imagens/aviao.png" title="Ícone do avião" alt="Ícone do aviao">
           <h1>solicite um orçamento</h1>  
         </div>
 
-        <div>
+        <div class="container-dados">
           <h2>Informe seus dados</h2>
-          <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+          <form class="fomulario-principal" method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
             <label for="nome">Nome</label>
             <input id="nome" type="text" name="nome" placeholder="Nome completo" required>
     
@@ -51,7 +53,7 @@
               </div>
             </div>
     
-            <div>
+            <div class="formulario-duplo">
               <div>
                 <label for="origem">Origem</label>
                 <select id="origem" name="origem">
@@ -78,11 +80,11 @@
             <label>Quarto com cama infantil?</label>
             <div>
               <div>
-                <input type="radio" id="infantil-sim" value="s">
+                <input type="radio" id="infantil-sim" name="infantil" value="s">
                 <label for="infantil-sim">Sim</label>
               </div>
               <div>
-                <input type="radio"id="infantil-nao" value="n">
+                <input type="radio"id="infantil-nao" name="infantil" value="n">
                 <label for="infantil-nao">Não</label>
               </div>
             </div>
