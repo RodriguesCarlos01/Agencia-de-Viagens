@@ -104,11 +104,11 @@ body{
 .fomulario-principal{
   display: flex;
   flex-direction: column;
-  border: 3px solid red;
+  padding: 20px;
 }
 
 .fomulario-principal label{
-  font-size: 16px;
+  font-size: 16px
 }
 
 .fomulario-principal input {
@@ -117,7 +117,135 @@ body{
   margin: 10px 0px;
 }
 .formulario-duplo{
-  border: 3px solid red;
+  display: flex;
+  width: 100%;
+  gap: 20px;
 }
+
+.formulario-duplo input, select{
+  width: 450px;
+}
+
+.formulario-duplo select{
+  font-size: 14px;
+  padding: 6px;
+  
+}
+
+.label-radio, .label-checkbox{
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.campo-radio{
+  width: 180px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.campo-radio div{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.campo-checkbox{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.campo-checkbox div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.campo-checkbox label{
+  width: 80px;
+}
+
+.campo-checkbox input{
+  width: 15px;
+}
+
+.btn{
+  width: 160px;
+  font-size: 14px;
+  color: var(--branco);
+  background-color: var(--titulo-bordas);
+  padding: 6px;
+  border: none;
+}
+
+.ofertas-natureza{
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+}
+
+.ofertas-natureza h2{
+  width: 1024px;
+  font-size: 26px;
+  margin: 40px auto 10px;
+  
+}
+
+.ofertas-natureza h3{
+  width: 1024px;
+  font-size: 18px;
+  margin: 0 auto 20px;
+  font-weight: normal;
+}
+
+.ofertas-natureza span{
+  font-weight: bold;
+}
+
+.ofertas{
+  width: 1024px;
+  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.imagem-maior{
+  width: 100%;
+  height: 375px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagem-maior-destaque{
+  position: relative;
+  width: calc(50% - 10px);
+  height: 100%;
+}
+
+.quatro-imagens{
+  width: calc(50% - 10px);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.quatro-imagens figure{
+  position: relative;
+  width: calc(50% - 10px);
+  height: calc(50% - 10px);
+  margin: 0 6;
+}
+
+.imagem-maior img, .quatro-imagens img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 

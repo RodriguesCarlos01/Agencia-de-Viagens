@@ -42,7 +42,7 @@
               <!-- [0-9]{5}: Após o espaço, o campo deve conter exatamente cinco dígitos -->
               <!-- -: Depois dos cinco dígitos, deve haver um hífen literal (-). -->
               <!-- [0-9]{4}: Após o hífen, o campo deve conter exatamente quatro dígitos -->
-            <div>
+            <div class="formulario-duplo">
               <div> 
                 <label for="ida">Data da ida</label>
                 <input id="ida" type="date" name="partida">
@@ -77,8 +77,8 @@
                 </select>
               </div>
             </div>
-            <label>Quarto com cama infantil?</label>
-            <div>
+            <label class="label-radio">Quarto com cama infantil?</label>
+            <div class="campo-radio">
               <div>
                 <input type="radio" id="infantil-sim" name="infantil" value="s">
                 <label for="infantil-sim">Sim</label>
@@ -89,12 +89,12 @@
               </div>
             </div>
 
-            <label>Preferências de hospedagem</label>
-            <div>
+            <label class="label-checkbox">Preferências de hospedagem</label>
+            <div class="campo-checkbox">
               <div>
                 <input type="checkbox" name="preferencias[]" value="piscina" id="piscina">
                 <label for="piscina">Piscina</label>
-                </div>
+              </div>
               <div>
                 <input type="checkbox" name="preferencias[]" value="wi-fi" id="wi-fi">
                 <label for="wi-fi">Wi-fi</label>
@@ -118,30 +118,35 @@
       <h2>Ofertas</h2>
       <h3>Com até <span>50%</span>de desconto.</h3>
 
-      <div>
+      
         <div class="ofertas">
-          <div>
-            <img src="imagens/rio.jpg" alt="Rio de Janeiro - Ciadade Maravilhosa" title="Rio de Janeiro - Brasil">
-            <span>Rio de Janeiro</span>
-          </div>
-          <div>
-            <img src="imagens/manaus.jpg" alt="Manaus" title="Manaus">
-            <span>Manaus</span>
-          </div>
-          <div>
-            <img src="imagens/niteroi.jpg" alt="Ponte Rio-Niterói" title="Ponte Rio-Niterói - RJ">
-            <span>Rio de Janeiro</span>
-          </div>
-          <div>
-            <img src="imagens/saopaulo.jpg" alt="São Paulo - SP" title="São Paulo - Brasil">
-            <span>São Paulo</span>
-          </div>
-          <div>
-            <img src="imagens/maranhao.jpg" alt="Maranhão" title="Maranhão - Brasil">
-            <span>Maranhão</span>
+          <div class="imagem-maior">
+            <figure class="imagem-maior-destaque">
+              <img src="imagens/rio.jpg" alt="Rio de Janeiro - Ciadade Maravilhosa" title="Rio de Janeiro - Brasil">
+              <figcaption>Rio de Janeiro</figcaption>
+            </figure >
+          
+
+            <div  class="quatro-imagens">
+              <figure class="imagem">
+                <img src="imagens/manaus.jpg" alt="Manaus" title="Manaus">
+                <figcaption>Manaus</figcaption>
+              </figure>
+              <figure class="imagem">
+                <img src="imagens/niteroi.jpg" alt="Ponte Rio-Niterói" title="Ponte Rio-Niterói - RJ">
+                <figcaption>Rio de Janeiro</figcaption>
+              </figure>
+              <figure class="imagem">
+                <img src="imagens/saopaulo.jpg" alt="São Paulo - SP" title="São Paulo - Brasil">
+                <figcaption>São Paulo</figcaption>
+              </figure>
+              <figure class="imagem">
+                <img src="imagens/maranhao.jpg" alt="Maranhão" title="Maranhão - Brasil">
+                <figcaption>Maranhão</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section>
