@@ -180,20 +180,19 @@ body{
   border: none;
 }
 
-.ofertas-natureza{
+.subtitulo-oferta-natureza{
   width: 100%;
   height: auto;
-  border: 1px solid red;
 }
 
-.ofertas-natureza h2{
+.ofertas-natureza h2, .subtitulo-oferta-natureza h2{
   width: 1024px;
   font-size: 26px;
   margin: 40px auto 10px;
   
 }
 
-.ofertas-natureza h3{
+.ofertas-natureza h3, .subtitulo-oferta-natureza h3{
   width: 1024px;
   font-size: 18px;
   margin: 0 auto 20px;
@@ -206,7 +205,6 @@ body{
 
 .ofertas{
   width: 1024px;
-  border: 1px solid green;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -247,5 +245,57 @@ body{
   height: 100%;
 }
 
+.subtitulo-oferta-natureza figcaption{
+  width: 100%;
+  color: var(--branco);
+  position: absolute;
+  bottom: 0px;
+  padding: 5px 0px 5px 10px;
+  background-color: rgba(29, 27, 27, 0.726);
+}
 
+.natureza-duas-imagens{
+  width: 100%;
+  height:  auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
 
+.natureza-duas-imagens img{
+  width: 100%;
+}
+
+.natureza-duas-imagens figure{
+  position: relative;
+  width: calc(50% - 10px);
+  height: calc(50% - 10px);
+  margin: 0 6px;
+}
+
+.imagem-natureza{
+  width: calc(50% - 10px);
+  height: 100%;
+}
+
+.imagem-natureza img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.imagem-natureza div{
+  width: 100%;
+  padding: 20px;
+  background-color: var(--branco);
+}
+
+.imagem-natureza h3{
+  font-size: 16px;
+}
+
+.imagem-natureza p{
+  color: grey;
+  font-size: 14px;
+  margin: 15px 0px 0px 0px;
+}
